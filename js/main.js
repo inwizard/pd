@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('select').styler();
-})
+	$('.js-custom-form-el').styler();
+});
