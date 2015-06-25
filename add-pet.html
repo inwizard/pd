@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пора домой!</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body class="log-page">
+<div class="wrapper">
+	<header>
+		<div class="header-container">
+			<a href="/" class="logo"></a>
+			<div class="header-title">
+				<h2>Первый Российский сервис поиска хозяев для бездомных животных</h2>
+				<a href="#">pora-domoy.ru</a>
+			</div>
+			<div class="header-enter">
+				<a class="enter" href="">Войти</a>
+				<a class="registration" href="">Зарегистрироваться</a>
+			</div>
+		</div>
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<nav>
+					<ul>
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>
+						<li><a href="#">статьи</a></li>
+					</ul>
+				</nav>
+				<div class="header-social">
+					<a class="facebook" href="#"></a>
+					<a class="twitter" href="#"></a>
+					<a class="odnoklasniki" href="#"></a>
+					<a class="vk" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content-container">
+        <div class="main main_center">
+            <div class="main-title">
+                <h1>Добавить питомца</h1>
+            </div>
+            <div class="note note_yellow note_form">
+                <form action="/" class="form form_add-pet">
+                    <div class="form__row">
+                        <div class="form__col-2-1"><input class="js-custom-form-el" type="checkbox" id="checkbox1" /> <label for="checkbox1">Кот/Кошка</label></div>
+                        <div class="form__col-2-1"><input class="js-custom-form-el" type="checkbox" id="checkbox2" /> <label for="checkbox1">Собака</label></div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col-1">Порода:</div>
+                        <div class="form__col-2">
+                            <select class="js-custom-form-el" name="breed">
+                                <option value="1">Порода 1</option>
+                                <option value="2">Порода 2</option>
+                                <option value="3">Порода 3</option>
+                                <option value="4">Порода 4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col-1">Пол:</div>
+                        <div class="form__col-2">
+                            <select class="js-custom-form-el" name="gender">
+                            <option value="1">Мужской</option>
+                            <option value="2">Женский</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col-1">Окрас:</div>
+                        <div class="form__col-2">
+                            <select class="js-custom-form-el" name="color">
+                                <option value="1">Окрас 1</option>
+                                <option value="2">Окрас 2</option>
+                                <option value="3">Окрас 3</option>
+                                <option value="4">Окрас 4</option>
+                                <option value="5">Окрас 5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col-1">Возраст:</div>
+                        <div class="form__col-2">
+                            <select class="js-custom-form-el" name="age">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col-1">Размер: </div>
+                        <div class="form__col-2">
+                            <select class="js-custom-form-el" name="size">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="input__file input__file_simple btn btn_color_green" data-text="Заргузить фото">
+                            <input class="js-custom-form-el" type="file" />
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__label">Наличие документов, справок, прививок</div>
+                        <textarea class="form__textarea form__textarea_wide" name="about" id="textarea1" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__label">Информация о животном</div>
+                        <textarea class="form__textarea form__textarea_wide" name="about" id="textarea2" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__label">История жизни</div>
+                        <textarea class="form__textarea form__textarea_wide" name="about" id="textarea3" cols="30" rows="3"></textarea>
+                    </div>
+
+                    <div class="form__row ta-c">
+                        <button class="btn btn_color_green btn_type_submit">Регистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+	<footer>
+		<p>© 2004-2015 Adopt-a-Pet.com - All rights reserved<br>Дизайн <a href="http://jane-safo.ru/">jane-safo.ru</a></p>
+	</footer>
+</div>
+</body>
+</html>
