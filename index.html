@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пора домой!</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="header-container">
+			<a href="/" class="logo"></a>
+			<div class="header-title">
+				<h2>Первый Российский сервис поиска хозяев для бездомных животных</h2>
+				<a href="#">pora-domoy.ru</a>
+			</div>
+			<div class="header-enter">
+				<a class="enter" href="">Войти</a>
+				<a class="registration" href="">Зарегистрироваться</a>
+			</div>
+		</div>
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<nav>
+					<ul>
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>
+						<li><a href="#">статьи</a></li>
+					</ul>
+				</nav>
+				<div class="header-social">
+					<a class="facebook" href="#"></a>
+					<a class="twitter" href="#"></a>
+					<a class="odnoklasniki" href="#"></a>
+					<a class="vk" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content-container">
+		<div class="main">
+			<div class="main-title">
+				<h1>Найди животное</h1> <span>в
+				<select name="region" id="region">
+					<option value="1">Москве и МО</option>
+					<option value="2">Москве и МО1</option>
+					<option value="3">Москве и МО2</option>
+					<option value="3">Москве и МО3 Москве и МО3</option>
+				</select>
+				</span>
+			</div>
+			<div class="search-form-tabs">
+				<input type="radio" id="form-tab1" name="form-tabs-input" checked>
+				<input type="radio" id="form-tab2" name="form-tabs-input">
+				<input type="radio" id="form-tab3" name="form-tabs-input">
+				<input type="radio" id="form-tab4" name="form-tabs-input">
+				<div class="form-tabs-button">
+					<label for="form-tab1" id="form-label1">Коты</label>
+					<label for="form-tab2" id="form-label2">Собаки</label>
+					<label for="form-tab3" id="form-label3">Приюты</label>
+					<label for="form-tab4" id="form-label4">Волонтеры</label>
+				</div>
+				<div class="tab one">
+					<form action="#" id="cat-form">
+						<div class="selects-wrapper">
+							<select name="breed" id="breed">
+								<option value="1">Порода1</option>
+								<option value="2">Порода2</option>
+								<option value="3">Окрас</option>
+								<option value="4">Порода4</option>
+							</select>
+							<select name="color" id="color">
+								<option value="1">Окрас1</option>
+								<option value="2">Окрас2</option>
+								<option value="3">Окрас3Окрас</option>
+								<option value="4">Окрас4</option>
+							</select>
+							<br>
+							<select name="sex" id="sex">
+								<option value="1">Пол1</option>
+								<option value="2">Пол2</option>
+								<option value="3">Пол3</option>
+								<option value="4">Пол4</option>
+							</select>
+							<select name="age" id="age">
+								<option value="1">Возраст1</option>
+								<option value="2">Возраст2</option>
+								<option value="3">Возраст3</option>
+								<option value="4">Возраст4</option>
+							</select>
+							<select name="size" id="size">
+								<option value="1">Размер1</option>
+								<option value="2">Размер2</option>
+								<option value="3">Размер3</option>
+								<option value="4">Размер4</option>
+							</select>
+						</div>
+						<button>Найти питомца</button>
+					</form>
+				</div>
+				<div class="tab two">
+					<form action="#" id="dog-form">
+						<div class="selects-wrapper">
+							<select name="breed" id="dog-breed">
+								<option value="1">Порода1</option>
+								<option value="2">Порода2</option>
+								<option value="3">Порода3</option>
+								<option value="4">Порода4</option>
+							</select>
+							<select name="color" id="dog-color">
+								<option value="1">Окрас1</option>
+								<option value="2">Окрас2</option>
+								<option value="3">Окрас3</option>
+								<option value="4">Окрас4</option>
+							</select>
+							<br>
+							<select name="sex" id="dog-sex">
+								<option value="1">Пол1</option>
+								<option value="2">Пол2</option>
+								<option value="3">Пол3</option>
+								<option value="4">Пол4</option>
+							</select>
+							<select name="age" id="dog-age">
+								<option value="1">Возраст1</option>
+								<option value="2">Возраст2</option>
+								<option value="3">Возраст3</option>
+								<option value="4">Возраст4</option>
+							</select>
+							<select name="size" id="dog-size">
+								<option value="1">Размер1</option>
+								<option value="2">Размер2</option>
+								<option value="3">Размер3</option>
+								<option value="4">Размер4</option>
+							</select>
+						</div>
+						<button>Найти питомца</button>
+					</form>
+				</div>
+				<div class="tab three">
+					<form action="#" id="shelter-form">
+						<div class="selects-wrapper">
+							<select name="shelter" id="shelter">
+								<option value="1">Приют 1</option>
+								<option value="2">Приют 2</option>
+								<option value="3">Приют 3</option>
+								<option value="4">Приют 4</option>
+							</select>
+							<br>
+						</div>
+						<button>Найти</button>
+					</form>
+				</div>
+				<div class="tab four">
+					<form action="#" id="person-form">
+						<div class="selects-wrapper">
+							<select name="person" id="person">
+								<option value="1">Волонтеры 1</option>
+								<option value="2">Волонтеры 2</option>
+								<option value="3">Волонтеры 3</option>
+								<option value="4">Волонтеры 4</option>
+							</select>
+						</div>
+						<button>Найти</button>
+					</form>
+				</div>
+			</div>
+			<section class="main-news">
+				<h2>Новости сайта</h2>
+				<article>
+					<img src="pic/img1.png" alt="">
+					<h2><a href="#">Качественно своеобразная, достаточно многочисленная</a></h2>
+					<p>Целостная группа животных одного вида, созданная творческим трудом человека, имеющая общую историю развития, характеризующуюся специфическими морфологическими и хозяйственно полезными свойствами и типом телосложения, </p>
+				</article>
+				<article>
+					<img src="pic/img2.png" alt="">
+					<h2><a href="#">Качественно своеобразная, достаточно многочисленная</a></h2>
+					<p>Целостная группа животных одного вида, созданная творческим трудом человека, имеющая общую историю развития, характеризующуюся специфическими морфологическими и хозяйственно полезными свойствами и типом телосложения, </p>
+				</article>
+				<article>
+					<img src="pic/img3.png" alt="">
+					<h2><a href="#">Качественно своеобразная, достаточно многочисленная</a></h2>
+					<p>Целостная группа животных одного вида, созданная творческим трудом человека, имеющая общую историю развития, характеризующуюся специфическими морфологическими и хозяйственно полезными свойствами и типом телосложения, </p>
+				</article>
+				<a href="" class="all-news">Все новости</a>
+			</section>
+			<div class="about-us">
+				<h3>Сервис поиска хозяев для бездомных животных</h3>
+				<p>Породами собак являются отдельные группы близкородственных и внешне подобных друг другу домашних собак, которые относятся к подвиду Canis lupus familiaris, обладают характерными особенностями, которые получены путем селекции и поддерживаются человеком, а также ведут свое происхождение от известной группы собак [1]</p>
+				<p>Породы собак не являются научно определяемой биологической классификацией, являясь группами собак, определяемыми клубами любителей по интересам, которые называются клубами любителей собак или какой-то отдельной породы собак.</p>
+				<p>Порода собак представлена значительным количеством индивидуальных собак, стабильно передающих определенные характеристики в течение поколений. Собаки одной и той же породы обладают похожими характеристиками в экстерьере и поведении, первоначально потому, что они происходят от избранного набора предков, которые имеют одинаковые характеристики.[2] Собаки определенной породы производят на свет потомство, которое подобно родителям. </p>
+			</div>
+		</div>
+		<aside>
+			<div class="subscribe-form">
+				<div class="aside-title">
+					Получать новости
+				</div>
+				<form action="#" id="subscribe-form">
+					<input type="Е-мейл" placeholder="email">
+					<button>Подписаться</button>
+				</form>
+			</div>
+			<div class="social-news">
+				<div class="aside-title">
+					Новости в соцсетях
+				</div>
+				<div class="social-news-wrapper">
+					<a href="#" class="social-link">
+					@adoptapetcom <img src="img/twit.png" alt=""></a>
+					<div class="date">21 сен</div>
+					<p>
+					Целостная группа животных одного вида, созданная творческим трудом человека, имеющая общую историю развития, характеризующуюся...
+					</p>
+					<a href="" class="big-news">Читать больше</a>
+				</div>
+				<div class="social-news-wrapper">
+					<a href="#" class="social-link">
+					@adoptapetcom <img src="img/f.png" alt=""></a>
+					<div class="date">21 сен</div>
+					<p>
+					Целостная группа животных одного вида, созданная творческим трудом человека, имеющая общую историю развития, характеризующуюся...
+					</p>
+					<a href="" class="big-news">Читать больше</a>
+				</div>
+			</div>
+			<div class="banner-zone">
+				<div class="banner">
+					<img src="pic/banner.png" alt="">
+				</div>
+				<div class="banner">
+					<img src="pic/banner.png" alt="">
+				</div>
+			</div>
+		</aside>
+	</div>
+	<footer>
+		<p>© 2004-2015 Adopt-a-Pet.com - All rights reserved<br>Дизайн <a href="http://jane-safo.ru/">jane-safo.ru</a></p>
+	</footer>
+</div>
+</body>
+</html>
