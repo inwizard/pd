@@ -521,14 +521,16 @@ nav li a:hover {
   padding-top: 12px;
 }
 .main-title .jq-selectbox__select {
-  border: 0 !important;
+  border: 0 none !important;
   box-shadow: none !important;
   color: #2798b3 !important;
   font-size: 18px !important;
   padding-left: 15px !important;
+  background: none;
 }
 .main-title .jq-selectbox__trigger {
   border: 0 !important;
+  background: none;
 }
 .main-title .jq-selectbox__trigger-arrow {
   right: auto !important;
