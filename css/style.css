@@ -1237,6 +1237,27 @@ footer a:hover {
 .aside-search a:hover {
   background: #80b100;
 }
+
+/*search-results-valanters*/
+.search-results-valanters{
+
+}
+.search-results-valanters .cart{
+  text-align:center;
+}
+.search-results-valanters .cart a{
+  margin:0;
+}
+.search-results-valanters .cart .cart-img{
+  margin:5px 0 10px;
+}
+.search-results-valanters .cart .btn{
+  margin-top:10px;
+  color:#fff;
+  text-transform:uppercase;
+  font-size:14px;
+}
+
 /* about us */
 
 .info-page {
@@ -1554,7 +1575,7 @@ footer a:hover {
   }
   .po-btns {
     width: 190px;
-    margin: 20px auto 0;
+    margin: 20px auto;
   }
 }
 .info-page .reg-vol-desc {
@@ -1579,7 +1600,16 @@ footer a:hover {
 .note_form:after {
   width: 224px;
 }
+.page__reg-vol {
+  max-width: 668px;
+  margin: 50px auto 0;
+}
+.page__reg-vol:before,
+.page__reg-vol:after {
+  width: 224px;
+}
 .form-reg-vol {
+  color: #504f4c;
   font-size: 16px;
 }
 .form-reg-vol .form__col-2-1 {
@@ -1683,6 +1713,30 @@ footer a:hover {
   margin-bottom: 5px;
   font-size: 16px;
 }
+
+.form-reg-vol-add-row {
+  margin-top: 15px;
+}
+.form-reg-vol-add-col-1,
+.form-reg-vol-add-col-2 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 16px;
+}
+.form-reg-vol-add-col-1 {
+  width: 40%;
+}
+.form-reg-vol-add-col-2-1 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
 .form-reg-vol-add-geo {
   width: 40%;
 }
@@ -1749,6 +1803,49 @@ footer a:hover {
   font-size: 13px;
 }
 
+.advert-table {
+  margin: 57px 0 30px;
+}
+.advert-row {
+  font-size: 0;
+  margin: 2px 0;
+}
+.advert-row:nth-child(odd) {
+  background: #f2f2f2;
+}
+.advert-row:nth-child(even) {
+  background: #daf9ff;
+}
+.advert-td {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+.advert-td:first-child {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius:    3px 0 0 3px;
+  -ms-border-radius:     3px 0 0 3px;
+  border-radius:         3px 0 0 3px;
+}
+.advert-td:last-child {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius:    0 3px 3px 0;
+  -ms-border-radius:     0 3px 3px 0;
+  border-radius:         0 3px 3px 0;
+}
+.advert-td_head {
+  border-top: 1px solid #b1ebee;
+  border-bottom: 1px solid #b1ebee;
+  background: #ffffff;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius:    0 !important;
+  -ms-border-radius:     0 !important;
+  border-radius:         0 !important;
+}
+
 .advert-vol-title {
   width: 35%;
 }
@@ -1763,6 +1860,31 @@ footer a:hover {
 }
 .advert-td-label {
   display: none;
+}
+
+.advert-td  .btn {
+  font-size: 13px;
+}
+
+.advert-vol-image{
+  width:18%;
+}
+.advert-vol-image img{
+  width:100%;
+  max-width:100px;
+}
+
+.search-advert-table .advert-vol-title {
+  width: 32%;
+}
+.search-advert-table .advert-vol-shelter {
+  width: 17%;
+}
+.search-advert-table .advert-vol-date {
+  width: 15%;
+}
+.search-advert-table .advert-vol-link {
+  width: 18%;
 }
 
 .advert-my-title {
@@ -1860,6 +1982,9 @@ footer a:hover {
   *zoom: 1;
   vertical-align: middle;
 }
+
+
+
 /* mobile */
 
 @media screen and (max-width: 939px) {
@@ -1902,6 +2027,15 @@ footer a:hover {
   }
   .subscribe-form button {
     margin-left: 34px;
+  }
+  .search-advert-table .advert-vol-title {
+    width: 30%;
+  }
+  .search-advert-table .advert-vol-shelter{
+    width: 15%;
+  }
+  .search-advert-table .advert-vol-link {
+    width: 22%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2044,6 +2178,14 @@ footer a:hover {
     margin-top: 10px;
   }
 
+  .form-reg-vol-add-col-1,
+  .form-reg-vol-add-col-2 {
+    width: 100%;
+  }
+  .form-reg-vol-add-col-1 {
+    margin-bottom: 5px;
+  }
+  
   .form__col-1,
   .form__col-2 {
     width: 100%;
@@ -2057,7 +2199,7 @@ footer a:hover {
   }
   .advert-td {
     display: block;
-    width: 100%;
+    width: 100% !important;
   }
   .advert-td-label {
     display: inline;
@@ -2089,6 +2231,16 @@ footer a:hover {
   }
   .my-pet__actions {
     width: 200px;
+  }
+  
+  .page__reg-vol::before,
+  .page__reg-vol::after {
+    width: 140px;
+  }
+  .modal-i-t-left,
+  .modal-i-t-right{
+    width:100% !important;
+    text-align:center;
   }
 }
 @media screen and (max-width: 400px) {
